@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1811" systemVersion="12C60" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EnergyBank" representedClassName="EnergyBank" syncable="YES">
+        <attribute name="savingsAccount" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+    </entity>
+    <entity name="EnergyCapture" representedClassName="EnergyCapture" syncable="YES">
+        <attribute name="dateCaptured" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="energyCaptured" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="sessionID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EnergyUse" representedClassName="EnergyUse" syncable="YES">
+        <attribute name="consumption" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cost" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="endSeconds" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="isProjected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="queriedDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sessionID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="startSeconds" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="ScoreTracker" representedClassName="ScoreTracker" syncable="YES">
+        <attribute name="demandResponseScore" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EnergyBank" positionX="160" positionY="192" width="128" height="60"/>
+        <element name="EnergyCapture" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="EnergyUse" positionX="0" positionY="0" width="128" height="150"/>
+        <element name="ScoreTracker" positionX="160" positionY="192" width="128" height="60"/>
+    </elements>
+</model>
